@@ -1,0 +1,254 @@
+:root {
+  /* 骨架屏 */
+  --skeleton-color: #eee;
+
+  /* 主色 */
+  --primary-base: #ff6700;
+  --primary-variant: #fff;
+
+  /* 辅助色 */
+  --secondary-base: #212121;
+  --secondary-variant: #b0b0b0;
+
+  /* 背景色 */
+  --background-base: #f5f5f5; /* pc */
+  --background-base-variant: #f9f9fa; /* m */
+  --background-base-variant-2: #f9f9fa; /* m */
+  --background-base-variant-3: #f9f9fa; /* m */
+  --background-base-variant-4: #f5f5f5; /* pc */
+  --background-base-variant-5: #f9f9fa;
+  --background-base-variant-6: #f7f7f7;
+  --background-light: #fff;
+  --background-light-a0: rgba(255, 255, 255, 0);
+  --background-light-variant: #fff;
+  --background-light-variant-2: #f6f6f7;
+  --background-dark: #ddd;
+  --background-black: #191919;
+  --background-card-bg: #fff;
+  --background-card-surface: #fafafa;
+  --background-light-sku: #fff;
+  --background-light-sku-dark: #fff;
+  --background-light-sku-gray: #f2f2f2;
+  --background-sku-img-normal: transparent;
+  --background-sku-img-highlight: transparent;
+  --background-quantity-active: #e0e0e0;
+  --background-tag-badge: #fe471c;
+  --background-contrast: #f5f5f5;
+  --background-contrast-light: #fff;
+  --background-contrast-variant: #424242;
+  --background-loading-button: #ccc;
+  --background-dialog-content: #fff;
+  --background-dialog-content-2: #fafafa;
+  --background-dialog-button: #ccc;
+  --background-dialog-button-disabled: #ddd;
+  --background-dialog-button-hover: #757575;
+  --background-primary: #ff6700;
+  --background-primary-a10: rgba(255, 103, 0, 0.1);
+  --background-primary-a10-variant: #ff6700;
+  --background-primary-a20: rgba(255, 103, 0, 0.2);
+  --background-primary-a20-variant: #ff6700;
+  --background-primary-variant: #ff6700;
+  --background-primary-variant-2: #ff6700;
+  --background-primary-variant-3: #ff6700;
+  --background-primary-variant-4: #ff6700;
+  --background-primary-hover: #f95b06;
+  --background-secondary: #212121;
+  --background-secondary-a80: rgba(33, 33, 33, 0.8);
+  --background-secondary-variant: #424242;
+  --background-secondary-variant-2: #212121;
+  --background-secondary-variant-3: #b0b0b0;
+  --background-secondary-variant-4: #424242;
+  --background-disable: #ddd;
+  --background-loader: #ff6700; /* JS 动态变色 */
+  --background-toast: rgba(34, 34, 34, 0.8);
+  --background-toast-1: rgba(34, 34, 34, 0.8);
+  --background-mask: #f8f8f8;
+  --background-mask-1: #f8f8f8;
+  --background-mask-a65: rgba(248, 248, 248, 0.65);
+  --background-step: #b0b0b0;
+  --background-step-done: #6eb655;
+  --background-spot: #ff6700;
+  --background-spot-variant: #fff;
+  --background-float: linear-gradient(135deg, #ffa86d 0%, #ff6700 100%);
+  --background-float-variant: linear-gradient(135deg, rgba(255, 168, 109, 0.1) 0%, rgba(255, 103, 0, 0.1) 100%);
+  --background-badge: linear-gradient(140deg, #ff9b7e 0%, #ff5169 100%);
+  --background-badge-variant: #ffc94d;
+  --background-quiz-success: linear-gradient(141deg, rgba(255, 155, 126, 0.05) 0%, rgba(255, 81, 105, 0.05) 100%);
+  --background-quiz-failure: linear-gradient(141deg, rgba(68, 160, 36, 0.05) 0%, rgba(110, 182, 85, 0.05) 100%);
+  --background-scrollbar-track: #eee;
+  --background-scrollbar-thumb: rgba(255, 103, 0, 0.5);
+  --background-product: #f8f8f8;
+  --brand-grey-40: #d0d0d0;
+  --brand-grey-20: #e7e7e7;
+  --brand-grey-10: #f3f3f3;
+
+  /* 阴影 */
+  --shadow-black-a2: rgba(0, 0, 0, 0.02);
+  --shadow-black-a5: rgba(0, 0, 0, 0.05);
+  --shadow-black-a7: rgba(0, 0, 0, 0.07);
+  --shadow-black-a8: rgba(0, 0, 0, 0.08);
+  --shadow-black-a10: rgba(0, 0, 0, 0.1);
+  --shadow-black-a15: rgba(0, 0, 0, 0.15);
+  --shadow-black-a20: rgba(0, 0, 0, 0.2);
+  --shadow-black-a30: rgba(0, 0, 0, 0.3);
+  --shadow-black-a40: rgba(0, 0, 0, 0.4);
+  --shadow-black-a50: rgba(0, 0, 0, 0.5);
+  --shadow-black-a60: rgba(0, 0, 0, 0.6);
+  --shadow-gray-a20: rgba(120, 120, 120, 0.2);
+  --shadow-gray-dark-a20: rgba(22, 23, 24, 0.2);
+  --shadow-white-a10: rgba(255, 255, 225, 0.1);
+  --shadow-white-a20: rgba(255, 255, 225, 0.2);
+  --shadow-white-a30: rgba(255, 255, 225, 0.3);
+  --shadow-white-a50: rgba(255, 255, 225, 0.5);
+  --shadow-white-a80: rgba(255, 255, 225, 0.8);
+  --shadow-white-a90: rgba(255, 255, 225, 0.9);
+  --shadow-contrast-a20: rgba(255, 255, 225, 0.2);
+  --shadow-contrast-a30: rgba(255, 255, 225, 0.3);
+  --shadow-contrast-a50: rgba(255, 255, 225, 0.5);
+  --shadow-contrast-a90: rgba(255, 255, 225, 0.9);
+  --shadow-primary-a10: rgba(255, 103, 0, 0.1);
+  --shadow-primary-a20: rgba(255, 103, 0, 0.2);
+  --shadow-primary-a30: rgba(255, 103, 0, 0.3);
+  --shadow-primary-a40: rgba(255, 103, 0, 0.4);
+  --shadow-primary-a50: rgba(255, 103, 0, 0.5);
+
+  /* 边框 */
+  --border-base: #ddd;
+  --border-base-variant: #b0b0b0;
+  --border-base-variant-2: #ddd;
+  --border-base-variant-3: #ddd;
+  --border-base-variant-4: #898989;
+  --border-light: #eee;
+  --border-light-variant: #eee;
+  --border-light-variant-2: #eee;
+  --border-light-variant-3: #e0e0e0;
+  --border-light-variant-4: #e0e0e0;
+  --border-light-variant-5: #e0e0e0;
+  --border-light-variant-6: #f8f8f8;
+  --border-dark: #424242;
+  --border-dark-variant: #191919;
+  --border-input: #b0b0b0;
+  --border-gray: #dbdbdb;
+  --border-loading-button: #ccc;
+  --border-disabled-button: #ddd;
+  --border-primary: #ff6700;
+  --border-primary-variant: #ff6700;
+  --border-primary-variant-2: #ff6700;
+  --border-primary-a20: rgba(255, 103, 0, 0.2);
+  --border-secondary: #212121;
+  --border-record: #83c44e;
+
+  /* 文本 */
+  --text-base: #191919;
+  --text-reverse: #fff;
+  --text-primary: #ff6900;
+  --text-secondary: #898989;
+
+  /* 标题 */
+  --title-base: #424242;
+  --title-base-variant: #424242;
+  --title-base-variant-2: #424242;
+  --title-base-variant-3: #424242;
+  --title-base-variant-4: #424242;
+  --title-base-variant-5: #424242;
+  --title-light: #b0b0b0;
+  --title-light-variant: #c9c9c9;
+  --title-light-variant-2: #999;
+  --title-light-variant-3: #c6c6c6;
+  --title-light-variant-4: #b4b4b4;
+  --title-light-variant-5: #ddd;
+  --title-light-variant-6: #b0b0b0;
+  --title-light-variant-7: #c9c9c9;
+  --title-light-variant-8: #c9c9c9;
+  --title-light-variant-9: #ddd;
+  --title-dark: #000;
+  --title-dark-variant: #222;
+  --title-dark-variant-2: #b4b4b4;
+  --title-dark-variant-3: #2e2323;
+  --title-dark-variant-4: #2e2323;
+  --title-dark-variant-5: #2e2323;
+  --title-dark-variant-6: #000;
+  --title-primary: #ff6700;
+  --title-primary-variant: #fff;
+  --title-primary-variant-2: #fff;
+  --title-primary-variant-3: #ff6700;
+  --title-primary-variant-4: #fff;
+  --title-primary-variant-5: #fff;
+  --title-secondary: #212121;
+
+  /* 正文 & 按钮（主色与辅助色之外的颜色） */
+  --content-base: #666;
+  --content-base-variant: #666;
+  --content-light: #757575;
+  --content-light-variant: #757575;
+  --content-light-variant-2: #757575;
+  --content-light-variant-3: #999;
+  --content-dark: #424242;
+  --content-dark-variant: #333;
+  --content-dark-variant-2: #424242;
+  --content-dark-variant-3: #424242;
+  --content-dark-variant-4: #333;
+  --content-contrast: #999;
+  --content-contrast-variant: #616161;
+  --content-active: #ff6900; /* 没写错 */
+  --content-primary: #ff6700;
+  --content-primary-variant: #ff6700;
+  --content-primary-variant-2: #ff6700;
+  --content-primary-variant-3: #ff6700;
+  --content-delivery: #298cda;
+  --content-delivery-info: #888;
+  --content-delivery-info-2: #b0b0b0;
+  --content-notice: #ff9e0d;
+  --content-complete: #6eb655;
+  --content-search-box: #888;
+  --button-base: #757575;
+  --button-base-variant-1: #757575;
+  --button-base-variant-2: #fff;
+  --button-dialog-close: #c9c9c9;
+  --button-dialog-close-on: #666;
+  --button-delete: #ccc;
+  --button-delete-1: #ccc;
+  --button-delete-variant: #4a90e2;
+  --button-active: #424242;
+  --select-option-active: #ff6700;
+  --button-dark: #5c3b3b;
+  --button-select: #eee;
+
+  /* 链接 & 图标 */
+  --link-base: #b0b0b0;
+  --link-base-variant: #b0b0b0;
+  --link-light: #fff;
+  --link-light-variant: #fff;
+  --link-light-variant-2: #fff;
+  --link-dark: #b0b0b0;
+  --link-dark-variant: #b0b0b0;
+  --link-dark-variant-2: #424242;
+  --link-dark-variant-3: #212121;
+  --link-primary: #666;
+  --link-blue: #298cda;
+  --link-active: #ff6700;
+  --link-disabled: #fff;
+
+  /* 禁用项 */
+  --disabled-base: #c9c9c9;
+  --disabled-light: #b0b0b0;
+  --disabled-light-2: #ccc;
+  --disabled-light-3: transparent;
+  --disabled-light-4: #eee;
+  --disabled-dark: #757575;
+
+  /* 分割线 */
+  --divider-base: #eee;
+  --divider-primary: #ff6700;
+  --divider-secondary: #212121;
+
+  /* 提示 */
+  --notice-info: #2db7f5;
+  --notice-success: #83c44e;
+  --notice-warning: #f90;
+  --notice-error: #f14d4d;
+  --notice-error-1: #f14d4d;
+
+  /* 滚动条样式 */
+  --scroll-base: #ddd;
+}

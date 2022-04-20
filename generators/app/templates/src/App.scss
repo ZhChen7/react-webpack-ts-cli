@@ -1,0 +1,33 @@
+$body-color: red;
+$imgUrl : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm9HoIRZxaeIIp2wGHghMwXSHEbpFYyA3c2Q&usqp=CAU';
+$name : 'app';
+
+body {
+  color: $body-color;
+}
+
+h1 {
+  color: var(--shadow-primary-a50);
+}
+
+.#{$name} {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .img {
+    width: 300px;
+    height: auto;
+  }
+
+  &__img {
+    background: url($imgUrl) center no-repeat;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+}
+
+.bg-filter {
+  filter: blur(5px);
+}

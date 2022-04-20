@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "removeComments": false, // @loadable/webpack-plugin 拆包分析器需要读取 webpackChunkName 注释配置，这里只能是 false，否则 SSR 到 CSR 阶段会有闪白屏问题
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "paths": {
+      "@/src/*": [
+        "./src/*"
+      ]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ],
+    "esModuleInterop": true,
+    "declaration": false,
+    "outDir": "lib",
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "es2017",
+      "dom",
+      "esnext.array",
+      "webworker"
+    ],
+    "sourceMap": false,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "skipLibCheck": true, // i18next 两个扩展之间存在冲突 https://github.com/i18next/i18next-chained-backend/issues/22
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./index.d.ts",
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "config",
+    "webpack",
+    "jest",
+    "dist"
+  ]
+}

@@ -1,0 +1,2 @@
+export { imgUrl } from './constant';
+
