@@ -17,6 +17,10 @@
    - 或者直接命令行输入  `yo` , 手动选择 `Zc`
 
 
-[![LsuUXj.png](https://s1.ax1x.com/2022/04/20/LsuUXj.png)](https://imgtu.com/i/LsuUXj)
 
-[![Lsu9X9.png](https://s1.ax1x.com/2022/04/20/Lsu9X9.png)](https://imgtu.com/i/Lsu9X9)
+[![demo.png](https://i.postimg.cc/PNGPPvJJ/demo.png)](https://postimg.cc/kRcnH4xP)
+
+
+
+
+
