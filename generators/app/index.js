@@ -10,9 +10,7 @@ const Generator = require('yeoman-generator')
 module.exports = class extends Generator {
   writing() {
     // 把每一个文件都通过模板转换到目标路径
-
     const templates = [
-      '.npmignore',
       'README.md',
       'template/index.html',
       'src/styles/palette.css',
@@ -26,18 +24,16 @@ module.exports = class extends Generator {
       'package.json',
       'build/webpack.base.conf.js',
       'build/webpack.dev.conf.js',
-      'config/index.js',
-      'lib/src/App.d.ts',
-      'lib/src/index.d.ts'
+      'config/index.js'
     ]
 
     templates.forEach(item => {
       // item => 每个文件路径
-      this.fs.copyTpl(
-        this.templatePath(item),
-        this.destinationPath(item),
-        this.answers
-      )
+        this.fs.copyTpl(
+          this.templatePath(item),
+          this.destinationPath(item),
+          this.answers
+        )
     })
   }
 }
