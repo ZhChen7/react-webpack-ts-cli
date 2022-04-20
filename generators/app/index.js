@@ -12,7 +12,7 @@ module.exports = class extends Generator {
     // 把每一个文件都通过模板转换到目标路径
 
     const templates = [
-      '.gitignore',
+      '.npmignore',
       'README.md',
       'template/index.html',
       'src/styles/palette.css',
