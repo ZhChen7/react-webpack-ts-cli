@@ -1,7 +1,7 @@
 {
   "name": "generator-zc",
-  "version": "1.0.2",
-  "description": "A SEO friendly cli for react webpack typescript international website on both Client or Server side.",
+  "version": "1.0.4",
+  "description": "基于react+webpack+typescript的项目目录快速生成器",
   "main": "index.js",
   "scripts": {
     "npm:publish": "npm publish"
@@ -17,21 +17,7 @@
     "zhouchen",
     "TypeScript",
     "RxJS",
-    "React",
-    "Xiaomi",
-    "International",
-    "Components",
-    "Modules",
-    "Store",
-    "Web",
-    "H5",
-    "Desktop",
-    "Mobile",
-    "Responsive",
-    "Live",
-    "SEO",
-    "SSR",
-    "ES6"
+    "React"
   ],
   "dependencies": {
     "yeoman-generator": "^5.6.1"
