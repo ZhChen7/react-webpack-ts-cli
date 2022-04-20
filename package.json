@@ -1,15 +1,37 @@
 {
   "name": "generator-zc",
-  "version": "1.0.0",
-  "description": "zc react webpack cli",
+  "version": "1.0.2",
+  "description": "A SEO friendly cli for react webpack typescript international website on both Client or Server side.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "npm:publish": "npm publish"
   },
   "author": "zhouchen",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "generator-zc",
+    "webpack cli",
+    "react cli",
+    "typescript cli",
+    "zhouchen",
+    "TypeScript",
+    "RxJS",
+    "React",
+    "Xiaomi",
+    "International",
+    "Components",
+    "Modules",
+    "Store",
+    "Web",
+    "H5",
+    "Desktop",
+    "Mobile",
+    "Responsive",
+    "Live",
+    "SEO",
+    "SSR",
+    "ES6"
   ],
   "dependencies": {
     "yeoman-generator": "^5.6.1"
