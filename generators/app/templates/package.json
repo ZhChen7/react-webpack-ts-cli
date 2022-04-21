@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development TAG_ENVIRONMENT=test webpack-dev-server --config ./build/webpack.dev.conf.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./build/webpack.dev.conf.js"
+    "build:dev": "cross-env NODE_ENV=development webpack --config ./build/webpack.dev.conf.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.conf.js",
+    "analyse": "cross-env NODE_ENV=development ANALYZER=true webpack --config ./build/webpack.dev.conf.js"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +29,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^3.4.1",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.0",
     "postcss-custom-properties": "^12.1.7",
@@ -36,6 +39,7 @@
     "sass": "^1.50.1",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
     "ts-loader": "^9.2.8",
     "typescript": "^4.6.3",
     "url-loader": "^4.1.1",

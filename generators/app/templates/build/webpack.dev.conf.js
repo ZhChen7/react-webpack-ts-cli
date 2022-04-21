@@ -4,14 +4,13 @@ const { merge } = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf.js')
 const config = require('../config')
 
-const webpackConfig = merge(baseWebpackConfig,{
+const webpackConfig = merge(baseWebpackConfig, {
   mode: 'development',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name].[contenthash:4].bundle.js',
+    filename: 'js/[name].[contenthash:4].bundle.js',
     chunkFilename: '[id].[chunkhash].js',
-    publicPath: '/',
-    clean: true,
+    publicPath: '/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
@@ -39,7 +38,7 @@ const webpackConfig = merge(baseWebpackConfig,{
   },
 })
 
-if (config.build.bundleAnalyzerReport) {
+if (config.build.isAnalyzer) {
   const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
   webpackConfig.plugins.push(new BundleAnalyzerPlugin())
 }

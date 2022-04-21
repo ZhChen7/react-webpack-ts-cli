@@ -24,7 +24,9 @@ module.exports = class extends Generator {
       'package.json',
       'build/webpack.base.conf.js',
       'build/webpack.dev.conf.js',
-      'config/index.js'
+      'build/webpack.prod.conf.js',
+      'config/index.js',
+      'plugin/customPlugin.js'
     ]
 
     templates.forEach(item => {

@@ -117,7 +117,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: `[name]-z.css`
+    }),
     new EnvironmentPlugin({
       VERSION: `v${config.build.packageVersion}@${Date.now()}`,
     }),
